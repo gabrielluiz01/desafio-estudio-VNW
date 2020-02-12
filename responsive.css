@@ -2,6 +2,15 @@
    .block-ads{
       display: none;
    }
+   .box{
+      flex-direction: column;
+   }
+   .block-paisis{
+      width: 100%;
+   }
+   .block-pirulita-cevadiss{
+      width: 100%;
+   }
 }
 @media(max-width: 800px){
    .menu-block{
@@ -30,8 +39,37 @@
       flex-wrap: wrap;
       align-items: center;
    }
+   .block-paisis{
+      width: 100%;
+   }
+   .block-pirulita-cevadiss{
+      width: 100%;
+      flex-direction: column;
+   }
+   .block-pirulita, .block-cevadiss{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+   }
+   .block-cevadiss-title, .block-pirulita-title{
+      display: none;
+   }
+   .block-cevadiss-titleResp, .block-pirulita-titleResp{
+      display: block;
+      color: #E74C3C;
+   }
 }
-
+@media(max-width: 650px){
+   .footer-block img{
+      display: none;
+   }
+   .footer-block p {
+      width: 80%;
+   }
+}
 @media(max-width: 500px){
    .header-container{
       padding: 0.5rem 1rem 0 1rem;
@@ -47,14 +85,72 @@
    .block-buttons{
       display: none;
    }
-   .block-images , .block-notices{
+   .block-images {
       max-width: 100%;
+      justify-content: center;
+   }
+   .overlay-image, .overlay-image-two, .overlay-image-three{
+      width: 100%;
+   }
+   .block-images img{
+      width: 100%;
+   }
+   .block-notices{
+      width: 100%;
+      justify-content: center;
+   }
+   .container-divoltis{
+      padding: 0;
+   }
+   .block-info{
+      width: 100%;
       align-items: center;
-      justify-content: space-between;
-      background: red;
    }
-   .block-images img, .block-notices img{
-      width: 300px;
-      height: 200px;
+   .block-info img{
+      flex: 1;
    }
+   .block-pirulita, .block-cevadiss{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+   }
+   .block-pirulita-info h2, .block-cevadiss-info h2{
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #EA7A6E;
+   }
+   .block-pirulita-info p, .block-cevadiss-info p{
+      color: #606D7A;
+      width: 100%;
+      font-size: 13px;
+   }
+   .ads-resp{
+      width: auto;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+   }
+   .ads-resp p {
+      text-align: right;
+      margin-right: 1rem;
+      font-size: 12px;
+      color: #969494;
+      margin-bottom: 5px;
+   }
+   .ads-resp img {
+      width: 260px;
+      margin-right: 1rem;
+   }
+   .footer-block{
+      padding: 1rem 0;
+   }
+   .footer-block p {
+      width: 100%;
+      margin-left: 1rem;
+   }
+
 }
