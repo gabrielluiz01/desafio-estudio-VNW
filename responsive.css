@@ -16,8 +16,15 @@
    .menu-block{
       margin-right: 30px;
    }
+   .menu{
+      width: 25%;
+   }
    .image-text p{
       display: none;
+   }
+   .text-slide{
+      min-width: 370px;
+      font-size: 20px;
    }
    .block-buttons{
       width: 30%;
@@ -63,11 +70,37 @@
    }
 }
 @media(max-width: 650px){
+   .logo-menu{
+      display: none;
+   }
    .footer-block img{
       display: none;
    }
    .footer-block p {
       width: 80%;
+   }
+   .text-slide{
+      display: none;
+   }
+   .text-slide-resp{
+      display: block;
+      font-size: 20px;
+      align-self: center;
+      font-weight: bold;
+      width: 90%;
+      margin-top: 0.5rem;
+   }
+   .block-arrow-prev, .block-arrow-next{
+      display: none;
+   }
+   .slide{
+      width: 90%;
+   }
+   .container-top-title{
+      display: none;
+   }
+   .block-images{
+      margin-top: 2rem;
    }
 }
 @media(max-width: 500px){
@@ -79,7 +112,34 @@
       width: 80%;
       margin: 0;  
    }
+   .menu{
+      width: 100%;
+      height: 100%;
+   }
+   .text-slide-resp{
+      display: block;
+      font-size: 18px;
+      align-self: center;
+      font-weight: bold;
+      width: 90%;
+      margin-right: 0;
+      margin-top: 0.5rem
+   }
+   .text-slide-resp::before{
+      width: 65%;
+      margin: 0;
+      top: 51vh;
+      left: 6vw;
+   }
+   .image-text{
+      width: 90%;
+      height: 86px;
+      justify-content: flex-end;
+      margin-left: 15px;
+   }
    .folha-logo{
+      width: 150px;
+      align-self: flex-end;
       margin: 0 15px;
    }
    .block-buttons{
@@ -102,12 +162,19 @@
    .container-divoltis{
       padding: 0;
    }
+   .container-divoltis-title{
+      text-align: left;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      margin-right: 0;
+      margin-bottom: 0;
+   }
    .block-info{
       width: 100%;
-      align-items: center;
    }
    .block-info img{
-      flex: 1;
+      width: 100%;
+      height: 200px;
    }
    .block-pirulita, .block-cevadiss{
       width: 100%;
@@ -116,6 +183,9 @@
       align-items: center;
       flex-wrap: wrap;
       margin: 1.5rem 0;
+   }
+   .block-pirulita-info, .block-cevadiss-info{
+      margin-top: 1rem;
    }
    .block-pirulita-info h2, .block-cevadiss-info h2{
       font-size: 14px;
@@ -128,6 +198,10 @@
       width: 100%;
       font-size: 13px;
    }
+   .block-pirulita-info img, .block-cevadiss-info img{
+      width: 100px;
+   }
+
    .ads-resp{
       width: auto;
       align-self: center;

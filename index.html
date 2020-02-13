@@ -11,7 +11,16 @@
    <header id="inicio">
       <section class="header-container">
          <div class="menu-block">
-            <img src="assets/menu.png" alt="Menu">
+            <img src="assets/menu.png" alt="Menu" onclick="handleMenu()" class="menu-hamburguer">
+            <nav class="menu">
+               <div>
+                  <img src="assets/logo.png" class="logo-menu">
+                  <img src="assets/x-menu.png" alt="Menu" onclick="handleMenu()" class="x-menu">
+               </div>
+               <a href="" class="menu-options">Cacilds</a>
+               <a href="" class="menu-options">pirulita</a>
+               <a href="" class="menu-options">footer</a>
+            </nav>
             <span class="image-text">
                <img src="assets/logo.png" alt="Folha" class="folha-logo">
                <p>O site de teste para <b>novos webs</b></p>
@@ -30,21 +39,27 @@
       </section>
 
       <!-- SLIDE -->
-      <!-- <section class="slide">
-         <div class="block-arrow-prev">
+      <section class="slide">
+         <div class="block-arrow-prev"  onclick="prevImage()">
             <img src="assets/arrow-left.png" alt="" class="arrow-prev">
          </div>
          <div class="block-image-text">
-            <img src="assets/rocket.png" alt="" class="image-slide">
-            <span class="block-text-slide">
-               <h3 class="title-slide">Técnologia</h3>
-               <p class="text-slide">5 ferramentas em alta para desenvolvedores React</p>
-            </span>
+            <img src="assets/image_rotate.png" alt="" class="image-slide">
+ 
          </div>
-         <div class="block-arrow-next">
-            <img src="assets/arrow-right.png" alt="" class="arrow-next">
+         <div class="block-arrow-next" onclick="nextImage()">
+            <img src="assets/arrow-right.png" alt="" class="arrow-next" >
          </div>
-      </section> -->
+         <span class="block-text-slide">
+            <p class="text-slide">Pra lá, depois divoltis porris, paradis. Paisis, filhis, espiritis, santis</p>
+         </span>
+      </section>
+      <p class="text-slide-resp">Pra lá, depois divoltis porris, paradis. Paisis, filhis, espiritis, santis</p>
+      <div class="balls-slide">
+         <div class="ball1" onclick="ballSlide1()"></div>
+         <div class="ball2" onclick="ballSlide2()"></div>
+         <div class="ball3" onclick="ballSlide3()"></div>
+      </div>
 
       <!--  -->
 
@@ -52,7 +67,7 @@
    </header>
    <main>
       <section class="main-container">
-         <h1 class="container-top-title">top cacilds</h1>
+         <h1 class="container-top-title" id="cacilds">top cacilds</h1>
          <div class="block-images">
             <div class="overlay-image">
                <img src="assets/highlight.png" class="images">          
@@ -64,7 +79,7 @@
                <img src="assets/highlight-03.png" class="images">
             </div>
          </div>
-         <h1 class="container-top-title">divoltis porris</h1>
+         <h1 class="container-divoltis-title">divoltis porris</h1>
          <div class="container-divoltis">
             <div class="block-notices">
                <div class="block-info">
@@ -103,7 +118,7 @@
                <p class="block-paisis-text">Mussum ipsum cacilds, vidis litro abertis</p>
             </div>
             <div class="block-pirulita-cevadiss">
-               <h1 class="block-pirulita-titleResp">se pirulitá</h1>
+               <h1 class="block-pirulita-titleResp" id="pirulita">se pirulitá</h1>
                <div class="block-pirulita">
                   <h1 class="block-pirulita-title">se pirulitá</h1>
                   <div class="block-pirulita-info">
@@ -155,7 +170,7 @@
          </a>
          
       </div>
-      <div class="footer-block">
+      <div class="footer-block" id="footer">
          <img src="assets/logo_footer.png" alt="">
          <p>Copyright Folha de S.Paulo. Todos os direitos reservados. É proibida a reprodução do conteúdo desta página em qualquer meio de comunicação, eletrônico ou impresso, sem autorização escrita da Folhapress (pesquisa@folhapress.com.br)</p>
       </div>
