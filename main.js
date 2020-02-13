@@ -19,6 +19,9 @@ let slide = document.querySelector('.slide')
 let prev = document.querySelector('.arrow-prev')
 let next = document.querySelector('.arrow-next')
 
+let ball1 = document.querySelector('.ball1')
+let ball2 = document.querySelector('.ball2')
+let ball3 = document.querySelector('.ball3')
 
 
 function prevImage(){
@@ -46,9 +49,9 @@ function ballSlide1(){''
    }else{
       counter = 1
    }
-   document.querySelector('.ball1').style.background = '#1FA4E9';
-   document.querySelector('.ball2').style.background = '#9A9A9A';
-   document.querySelector('.ball3').style.background = '#9A9A9A';
+   ball1.style.background = '#1FA4E9';
+   ball2.style.background = '#9A9A9A';
+   ball3.style.background = '#9A9A9A';
    setImage()
 }
 function ballSlide2(){
@@ -57,9 +60,9 @@ function ballSlide2(){
    }else{
       counter = 2
    }
-   document.querySelector('.ball1').style.background = '#9A9A9A';
-   document.querySelector('.ball2').style.background = '#1FA4E9';
-   document.querySelector('.ball3').style.background = '#9A9A9A';
+   ball1.style.background = '#9A9A9A';
+   ball2.style.background = '#1FA4E9';
+   ball3.style.background = '#9A9A9A';
    setImage()
 }
 function ballSlide3(){
@@ -68,9 +71,9 @@ function ballSlide3(){
    }else{
       counter = 0
    }
-   document.querySelector('.ball2').style.background = '#9A9A9A';
-   document.querySelector('.ball3').style.background = '#1FA4E9';
-   document.querySelector('.ball1').style.background = '#9A9A9A';
+   ball2.style.background = '#9A9A9A';
+   ball3.style.background = '#1FA4E9';
+   ball1.style.background = '#9A9A9A';
    setImage()
 }
 
