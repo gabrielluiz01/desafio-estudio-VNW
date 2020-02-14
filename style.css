@@ -103,6 +103,7 @@ header{
    align-items: center;
    border-radius: 4px;
    border: 0;
+   background-color: #FFF
 }
 .button-twitter{
    width: 75px;
@@ -111,6 +112,7 @@ header{
    border-radius: 4px;
    border: 0;
    padding: 5px 2px;
+   background-color: #FFF;
 }
 .logo-facebook{
    width: 30px;

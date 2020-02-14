@@ -42,10 +42,8 @@
    }
    .block-notices{
       width: 100%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
    }
    .block-paisis{
       width: 100%;
