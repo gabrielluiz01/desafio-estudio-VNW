@@ -33,11 +33,12 @@
       margin: 0 0.5rem;
    }
    .block-images{
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 2rem;
    }
    .container-top-title{
-      text-align: center;
-      margin-left: 0;
+      display: none;
    }
    .block-notices{
       width: 100%;
@@ -102,6 +103,12 @@
    .block-images{
       margin-top: 2rem;
    }
+   .images{
+      width: 400px;
+   }
+   .block-info img{
+      width: 400px;
+   }
 }
 @media(max-width: 500px){
    .main-container{
@@ -115,9 +122,13 @@
       width: 80%;
       margin: 0;  
    }
+   .logo-menu{
+      display: block;
+   }
    .menu{
       width: 100%;
       height: 100%;
+      animation: none;
    }
    
    .text-slide-resp{
@@ -179,7 +190,6 @@
    }
    .block-info img{
       width: 100%;
-      height: 200px;
    }
    .block-pirulita, .block-cevadiss{
       width: 100%;

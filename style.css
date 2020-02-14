@@ -311,7 +311,7 @@ main{
    width: 250px;
 }
 .overlay-image, .overlay-image-two ,.overlay-image-three{
-   width: 200px;
+   min-width: 200px;
    position: relative;
    margin: 0 20px;
 }
@@ -377,14 +377,13 @@ main{
    margin-top: 4vh;
 }
 .block-info{
-   width: 300px;
+   min-width: 300px;
    padding: 0.5rem;
    display: flex;
    flex-direction: column;
 }
 .block-info img{
    width: 270px;
-   height: 150px;
 }
 .block-info h3{
    font-size: 15px;
