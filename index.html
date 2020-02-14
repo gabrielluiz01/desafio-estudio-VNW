@@ -16,10 +16,10 @@
                <div>
                   <img src="assets/logo.png" class="logo-menu">
                   <img src="assets/x-menu.png" alt="Menu" onclick="handleMenu()" class="x-menu">
-               </div>
-               <a href="" class="menu-options">Cacilds</a>
-               <a href="" class="menu-options">pirulita</a>
-               <a href="" class="menu-options">footer</a>
+               </div> 
+               <a href="#divoltis" class="menu-options" onclick="handleMenu()">Divoltis</a>
+               <a href="#pirulita" class="menu-options" onclick="handleMenu()">pirulita</a>
+               <a href="#footer" class="menu-options" onclick="handleMenu()">footer</a>
             </nav>
             <span class="image-text">
                <img src="assets/logo.png" alt="Folha" class="folha-logo">
@@ -80,7 +80,7 @@
             </div>
          </div>
          <h1 class="container-divoltis-title">divoltis porris</h1>
-         <div class="container-divoltis">
+         <div class="container-divoltis" id="divoltis">
             <div class="block-notices">
                <div class="block-info">
                   <img src="assets/mussum.png" alt="">
@@ -108,7 +108,7 @@
                <img src="assets/ads-esses.png">
             </aside>
          </div>
-         <div class="box">
+         <div class="box" id="pirulita">
             <div class="block-paisis">
                <h1 class="block-paisis-title">paisis, filhis, espiritis santis</h1>
                <p class="block-paisis-text">Mussum ipsum cacilds, vidis litro abertis. Consentis adipiscing elitis</p>
@@ -162,7 +162,7 @@
          </div>
       </section>
    </main>
-   <footer>
+   <footer id="footer">
       <div class="block-anchor">
          <a href="#inicio" class="anchor-home">
             <p>voltar ao top</p>

@@ -91,7 +91,7 @@ function handleMenu(ev){
    let menu = document.querySelector('.menu')
    if(menu.style.display === 'flex'){
       menu.style.display = 'none'
-      document.querySelector('.x-menu').style.display = 'none'
+      document.querySelector('.x-menu' || document.querySelector('.menu-options')).style.display = 'none'
 
    }else{
       menu.style.display = 'flex'
